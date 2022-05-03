@@ -195,23 +195,23 @@ namespace ClassLibrary1
 		{
 			char[] inputStr = input.ToString().ToCharArray();
 			for (int i = inputStr.Length - 1; i > 0; i--)
-            {
-				if((int)inputStr[i] > (int)inputStr[i - 1])
-                {
+			{
+				if ((int)inputStr[i] > (int)inputStr[i - 1])
+				{
 					char tempswap = inputStr[i];
 					inputStr[i] = inputStr[i - 1];
 					inputStr[i - 1] = tempswap;
 					break;
 				}
-            }
+			}
 			int result = Int32.Parse(string.Join("", inputStr));
-			return result != input ? result: -1;
-        }
+			return result != input ? result : -1;
+		}
 		[Test]
 		public void nextBiggerTest1()
-        {
+		{
 			Assert.AreEqual(2071, nextBigger(2017));
-        }
+		}
 		[Test]
 		public void nextBiggerTest2()
 		{
@@ -221,6 +221,40 @@ namespace ClassLibrary1
 		public void nextBiggerTest3()
 		{
 			Assert.AreEqual(-1, nextBigger(9731));
+		}
+	}
+	public class Extra_Task_2
+	{
+
+		public string IP_address(long k)
+		{
+			long fourth = k % 256;
+			long third = (k - fourth) / 256 % 256;
+			long second = (k - fourth - third) / (256 * 256) % 256;
+			long first = (k - fourth - third - second) / (256 * 256 * 256) % 256;
+			string[] str = { first.ToString(), 
+							second.ToString(), 
+							third.ToString(), 
+							fourth.ToString() };
+
+
+			return string.Join('.', str);
+		}
+		[Test]
+		public void Test_IP1()
+		{
+			Assert.AreEqual("128.32.10.1", IP_address(2149583361));
+		}
+
+		[Test]
+		public void Test_IP2()
+		{
+			Assert.AreEqual("0.0.0.32", IP_address(32));
+		}
+		[Test]
+		public void Test_IP3()
+		{
+			Assert.AreEqual("0.0.0.0", IP_address(0));
 		}
 	}
 }
