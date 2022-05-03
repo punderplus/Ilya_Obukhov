@@ -70,7 +70,7 @@ namespace ClassLibrary1
 		[Test]
 		public void FirstNonRepeatingLetter3()
 		{
-			Assert.AreEqual('Z', FirstNonRepeatingLetter("Zaalluuppaa"));
+			Assert.AreEqual('K', FirstNonRepeatingLetter("Kaalluupptt"));
 		}
 	}
 	public class Task_3
