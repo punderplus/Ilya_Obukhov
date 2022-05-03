@@ -77,15 +77,14 @@ namespace ClassLibrary1
 	{
 		public int digital_root(int input)
 		{
-			if(input < 10)
-            {
+			if (input < 10)
+			{
 				return input;
 			}
 			char[] strInput = input.ToString().ToCharArray();
 			int sum = 0;
-			for(int i = 0; i < strInput.Length; i++)
-            {
-				Console.WriteLine(strInput[i]);
+			for (int i = 0; i < strInput.Length; i++)
+			{
 				sum += Int32.Parse((strInput[i].ToString()));
 			}
 			return digital_root(sum);
@@ -114,6 +113,114 @@ namespace ClassLibrary1
 		public void digital_root5()
 		{
 			Assert.AreEqual(0, digital_root(0));
+		}
+	}
+	[TestFixture]
+	public class Task_4
+	{
+		public int getPairs(List<int> inputList, int target)
+		{
+			int num = 0;
+			for (int i = 0; i < inputList.Count; i++)
+			{
+				for (int j = i + 1; j < inputList.Count; j++)
+				{
+					if (inputList[i] + inputList[j] == target)
+					{
+						num++;
+					}
+				}
+			}
+			return num;
+		}
+		[Test]
+		public void getPairs1()
+		{
+			Assert.AreEqual(4, getPairs(new List<int>() { 1, 3, 6, 2, 2, 0, 4, 5 }, 5));
+		}
+		[Test]
+		public void getPairs2()
+		{
+			Assert.AreEqual(0, getPairs(new List<int>() { 1, 3, 0 }, 5));
+		}
+		[Test]
+		public void getPairs3()
+		{
+			Assert.AreEqual(0, getPairs(new List<int>() { 3 }, 6));
+		}
+	}
+	[TestFixture]
+	public class Task_5
+	{
+		public string UpperAndSort(string guests)
+		{
+			try
+			{
+				string[] str = guests.Split(';');
+				string[,] newStr = new string[str.Length, 2];
+				for (int i = 0; i < str.Length; i++)
+				{
+					newStr[i, 0] = str[i].Split(':')[1];
+					newStr[i, 1] = str[i].Split(':')[0];
+					str[i] = newStr[i, 0] + ", " + newStr[i, 1];
+				}
+				Array.Sort<string>(str, new Comparison<string>((i1, i2) => i1.CompareTo(i2)));
+				string result = ("(" + string.Join(")(", str) + ")").ToUpper();
+				return result;
+			}
+			catch (IndexOutOfRangeException)
+			{
+				return "";
+			}
+		}
+		[Test]
+		public void UpperAndSortTest1()
+		{
+			String s = "Fred:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+			String expected = "(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)";
+			Assert.AreEqual(expected, UpperAndSort(s));
+		}
+		[Test]
+		public void UpperAndSortTest2()
+		{
+			String s = "               ";
+			String expected = "";
+			Assert.AreEqual(expected, UpperAndSort(s));
+		}
+	}
+	[TestFixture]
+	public class Task_Extra
+	{
+		public int nextBigger(int input)
+		{
+			char[] inputStr = input.ToString().ToCharArray();
+			for (int i = inputStr.Length - 1; i > 0; i--)
+            {
+				if((int)inputStr[i] > (int)inputStr[i - 1])
+                {
+					char tempswap = inputStr[i];
+					inputStr[i] = inputStr[i - 1];
+					inputStr[i - 1] = tempswap;
+					break;
+				}
+            }
+			int result = Int32.Parse(string.Join("", inputStr));
+			return result != input ? result: -1;
+        }
+		[Test]
+		public void nextBiggerTest1()
+        {
+			Assert.AreEqual(2071, nextBigger(2017));
+        }
+		[Test]
+		public void nextBiggerTest2()
+		{
+			Assert.AreEqual(2202, nextBigger(2022));
+		}
+		[Test]
+		public void nextBiggerTest3()
+		{
+			Assert.AreEqual(-1, nextBigger(9731));
 		}
 	}
 }
