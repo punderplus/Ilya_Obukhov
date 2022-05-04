@@ -3,6 +3,7 @@ using NUnit.Framework;
 
 namespace ClassLibrary1
 {
+	[TestFixture]
 	public class Task_3
 	{
 		public int digital_root(int input)

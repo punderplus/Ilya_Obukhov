@@ -3,7 +3,7 @@
 namespace ClassLibrary1
 {
 	[TestFixture]
-	public class Extra_Task_2
+	public class Task_Extra_2
 	{
 
 		public string IP_address(long k)

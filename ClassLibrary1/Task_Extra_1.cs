@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace ClassLibrary1
 {
 	[TestFixture]
-	public class Task_Extra
+	public class Task_Extra_1
 	{
 		public int nextBigger(int input)
 		{
