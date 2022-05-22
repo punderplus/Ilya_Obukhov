@@ -1,0 +1,44 @@
+{
+  "uuid": "369ac417-f43a-4685-ba33-f5819c9e34e3-tc-0-1000",
+  "name": "Selenium.Tests.LaptopTest",
+  "children": [
+    "bd047c8e-0590-4fbe-9bff-fddf32ebd20f-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "Setup",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1653254822558,
+      "stop": 1653254822558
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1653254822558,
+      "stop": 1653254822558
+    }
+  ],
+  "links": [],
+  "start": 1653254806511,
+  "stop": 1653254822597
+}

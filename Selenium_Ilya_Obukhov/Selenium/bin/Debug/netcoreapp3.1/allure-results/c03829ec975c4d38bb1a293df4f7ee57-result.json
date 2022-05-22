@@ -1,0 +1,64 @@
+{
+  "uuid": "0b7c79fe-5d83-401d-a3b2-5f054812b666-tr-0-1001",
+  "historyId": "Selenium.Tests.LaptopTest",
+  "fullName": "Selenium.Tests.LaptopTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-T6OI22T"
+    },
+    {
+      "name": "package",
+      "value": "Selenium"
+    },
+    {
+      "name": "testMethod",
+      "value": "LaptopTest"
+    },
+    {
+      "name": "testClass",
+      "value": "Tests"
+    }
+  ],
+  "links": [],
+  "name": "LaptopTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LaptopTest"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LaptopTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "17da301c735948149cdfeb52874b530a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1653254020843,
+      "stop": 1653254035077
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1653254020842,
+  "stop": 1653254035081
+}
