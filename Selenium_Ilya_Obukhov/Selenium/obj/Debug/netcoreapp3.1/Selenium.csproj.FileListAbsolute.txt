@@ -196,7 +196,5 @@ C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Seleni
 C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\obj\Debug\netcoreapp3.1\Selenium.dll
 C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\obj\Debug\netcoreapp3.1\Selenium.pdb
 C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\obj\Debug\netcoreapp3.1\Selenium.genruntimeconfig.cache
-C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\Allure.Commons.dll
-C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\AspectInjector.Broker.dll
-C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\MimeTypesMap.dll
-C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\NUnit.Allure.dll
+C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
+C:\Users\iliak\Source\Repos\punderplus\Ilya_Obukhov\Selenium_Ilya_Obukhov\Selenium\bin\Debug\netcoreapp3.1\WebDriver.Support.dll

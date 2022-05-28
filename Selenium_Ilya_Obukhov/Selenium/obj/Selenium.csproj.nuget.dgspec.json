@@ -44,9 +44,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "ExtentReports": {
+            "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[3.11.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -64,9 +64,13 @@
               "target": "Package",
               "version": "[2.30.0, )"
             },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.1.1, )"
+              "version": "[4.2.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
